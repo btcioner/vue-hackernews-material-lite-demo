@@ -21,12 +21,17 @@
                     </span>
                     <span class="mdl-chip__text">{{news.time | fromNow}}</span>
                 </span>
+                <br>
                 <!-- Number badge -->
-                <span class="mdl-badge" data-badge="{{news.score}}">score</span>
 
             </div>
-            <div class="mdl-card__actions">
-                <a href="{{news.url}}" class="mdl-button">原文-></a>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{news.url}}">
+                    原文
+                </a>
+                <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="float: right">
+                    <span class="mdl-badge" data-badge="{{news.score}}" ><i class="material-icons">grade</i></span>
+                </button>
             </div>
         </div>
     </section>

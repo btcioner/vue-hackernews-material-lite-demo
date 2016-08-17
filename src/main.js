@@ -3,21 +3,22 @@ import scss from './stylesheets/app.scss'
 import Vue from 'vue'
 import Resource from 'vue-resource'
 import Router from 'vue-router'
-
+import { fromNow } from './filter';
 
 import App from './components/App.vue'
 import Home from './components/Home.vue'
-import {fromNow} from './filter'
+
+Vue.filter('fromNow', fromNow);
 
 // Install plugins
 Vue.use(Router);
 Vue.use(Resource);
-Vue.filter('fromNow', fromNow);
 Vue.directive('mdl', {
   bind: function() {
     componentHandler.upgradeElement(this.el);
   }
 });
+
 
 // Set up a new router
 var router = new Router()

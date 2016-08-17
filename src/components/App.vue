@@ -17,6 +17,15 @@
       <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         <h3>Hacker News</h3>
       </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+        <a href="#overview" class="mdl-layout__tab is-active">故事</a>
+        <a href="#features" class="mdl-layout__tab">评论</a>
+        <a href="#features" class="mdl-layout__tab">招聘</a>
+        <a href="#features" class="mdl-layout__tab">问答</a>
+        <a href="#features" class="mdl-layout__tab">投票</a>
+      </div>
     </header>
     <main class="mdl-layout__content">
       <router-view></router-view>
